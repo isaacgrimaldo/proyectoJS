@@ -1,7 +1,7 @@
 $(document).ready(function(){
     $(function(){
         $('.bxslider').bxSlider({
-          mode: 'vertical',
+          mode: 'fade',
           captions: true,
           slideWidth: 1200,
           responsive:true,
