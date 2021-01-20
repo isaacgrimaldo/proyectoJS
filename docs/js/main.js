@@ -112,6 +112,12 @@ $(document).ready(function(){
           
       })  
        
+
+  
+
+  //#region 
+     
+    /* para realizar los cabios del estilo de la pagina */
       function  cambioTheme (Url) {
           /*controlador de theme */  
         let congiThemeC = Url
@@ -157,18 +163,79 @@ $(document).ready(function(){
          
          let congilleno = localStorage.getItem('them')
              cambioTheme(congilleno)
-       }
-
-      
-      
+       }    
+ //#endregion
     
    /********************************************* */
-      function animacionBTheme(selector){
 
-      }
-       
 
-        
+ /* login  falso */
+
+
+
+
+ function generarUser(){
+           const login = $('#login');
+           const h4    = $('#h4')
+           const userObj =  JSON.parse(localStorage.getItem('user'));
+           const htmluser =`
+              <h4>Bienvenido</h4>   
+              <div  id ="dataUser">
+                 <p>${userObj.name}</p>
+                 <p>${userObj.email}</p>
+                 <p><button id="cerrarSesion" class="eventRaton" >Cerrar Sesion</button></p>
+              </div>   
+           `;
+           /**esconde el from */
+           login.append(htmluser);
+           const form = $("#from");
+                 form.hide()
+                 h4.hide() 
+                 
+}
+  
+function cerrarSesion (){
+  $('#cerrarSesion').click(function(e){
+    e.preventDefault()
+    localStorage.removeItem('user')
+    location.reload()
+  })
+}
+
+
+ if(!localStorage.getItem('user')){
+    const form = document.getElementById("from");
+          form.onsubmit = (e) => {
+            e.preventDefault();
+            const user = {
+             name: $('#from #name').val(),
+             email: $('#from #email').val(),
+             password:$('#from #password').val() ,
+            };
+            const userJSON = JSON.stringify(user);
+             localStorage.setItem('user', userJSON );
+             generarUser();
+             cerrarSesion()
+          }
+  }else{
+     generarUser()
+     cerrarSesion()
+  }
+
+ /******************************* */
+
+
+/* de footer a header */
+  $('.subir').click(function(e){
+    e.preventDefault()
+    $('html , body').animate({
+      scrollTop: "0"
+    },1200)
+    return false  
+  }) 
+
+/********************** */
+  
 });
 
  
