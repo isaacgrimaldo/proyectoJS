@@ -1,0 +1,35 @@
+body{
+    background: url('../img/rojo.jpg');
+    background-attachment:fixed;
+}
+
+/*controla los hover  btn y nave */
+.eventRaton:hover{
+    background-color:#ca3413;
+    cursor: pointer;
+}
+
+
+
+#logo{
+    background: #ca3413;
+}
+
+
+.buttonMore{   
+    background-color: #333;
+}
+
+
+
+form input[type="text"],
+form input[type="password"],
+form input[type="email"]{
+  border: 2px solid #ca3413  ;
+}
+
+form input[type='submit']{
+    border: 2px solid #ca3413 ;
+}
+
+

@@ -1,0 +1,34 @@
+body{
+    background: url('../img/cielo.jpg');
+    background-attachment:fixed;
+}
+
+/*controla los hover  btn y nave */
+.eventRaton:hover{
+    background-color:#1f87c4;
+    cursor: pointer;
+}
+
+
+
+#logo{
+    background:#1f87c4;
+}
+
+
+.buttonMore{   
+    background-color: #333;
+}
+
+
+
+form input[type="text"],
+form input[type="password"],
+form input[type="email"]{
+  border: 2px solid #1f87c4 ;
+}
+
+form input[type='submit']{
+    border: 2px solid #1f87c4 ;
+}
+

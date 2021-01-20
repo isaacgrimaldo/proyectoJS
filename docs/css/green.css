@@ -1,0 +1,36 @@
+
+body{
+    background: url('../img/hojas.jpg');
+    background-attachment:fixed;
+}
+
+/*controla los hover  btn y nave */
+.eventRaton:hover{
+    background-color:#235e3d;
+    cursor: pointer;
+}
+
+
+
+#logo{
+    background: #235e3d;
+}
+
+
+.buttonMore{   
+    background-color: #333;
+}
+
+
+
+form input[type="text"],
+form input[type="password"],
+form input[type="email"]{
+  border: 2px solid darkgreen  ;
+}
+
+form input[type='submit']{
+    border: 2px solid #235e3d ;
+}
+
+

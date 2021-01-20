@@ -6,9 +6,14 @@
     <meta charset="utf-8">
     <!--estilos css-->
     <link rel="stylesheet" href="css/style.css">
-  
+    <link id="theme" rel="stylesheet" > 
+    
    <!--jQuery-->
    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+
+  <!--momentjs-->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/locale/es-mx.min.js"></script>
 
     <!--slider-->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
@@ -16,6 +21,11 @@
 </head>
 
 <body>
+    <div id="stylePag-theme">
+        <div id="to-green" class="animacioH">1</div>
+        <div id="to-red" class="animacioH">2</div>
+        <div id="to-blue" class="animacioH">3</div>
+    </div>
     <section id="global">
         <!--cabezera-->
         <header>
@@ -44,46 +54,7 @@
         <!--Contenido-->
         <section id="content">
             <div id="posts">
-                <article class="post">
-                    <h2>titulo de articulo</h2>
-                    <span class="fecha">fecha de publicacion</span>
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magnam numquam possimus ut consequuntur
-                        natus quam, saepe facere praesentium laborum exercitationem non soluta amet cumque eveniet
-                        doloremque nobis quis iusto recusandae?
-                        Illum, fugit similique ut dolorum autem distinctio quaerat, ex qui, sit quisquam eum vel rerum
-                        beatae maiores! Ducimus provident quasi odit, iusto ab dolore modi iure nobis. Inventore,
-                        ratione corporis.
-                        Consectetur, eligendi rem vero ullam voluptatem voluptatum laborum earum qui, nam assumenda
-                        culpa! Eos rerum beatae commodi dicta facilis, totam modi sint maxime rem, non, inventore
-                        debitis impedit reprehenderit explicabo.
-                        Omnis quaerat, harum illo debitis fuga aliquid quibusdam. Dolorem quidem veniam impedit
-                        inventore mollitia illum cupiditate in quisquam suscipit, natus laboriosam dolorum excepturi
-                        exercitationem amet, sed quae maxime laudantium voluptate?
-                        Voluptas, minima blanditiis. Aliquid libero, atque quae fugit optio corrupti? Aperiam, odit
-                        quis. Obcaecati velit, nulla maiores placeat ex voluptate odit voluptates hic repudiandae
-                        voluptatem iusto cupiditate, asperiores eos sit.</p>
-                    <a href="$" class="buttonMore , eventRaton">Leer mas</a>
-                </article>
-                <article class="post">
-                    <h2>titulo de articulo</h2>
-                    <span class="fecha">fecha de publicacion</span>
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magnam numquam possimus ut consequuntur
-                        natus quam, saepe facere praesentium laborum exercitationem non soluta amet cumque eveniet
-                        doloremque nobis quis iusto recusandae?
-                        Illum, fugit similique ut dolorum autem distinctio quaerat, ex qui, sit quisquam eum vel rerum
-                        beatae maiores! Ducimus provident quasi odit, iusto ab dolore modi iure nobis. Inventore,
-                        ratione corporis.
-                        Consectetur, eligendi rem vero ullam voluptatem voluptatum laborum earum qui, nam assumenda
-                        culpa! Eos rerum beatae commodi dicta facilis, totam modi sint maxime rem, non, inventore
-                        debitis impedit reprehenderit explicabo.
-                        Omnis quaerat, harum illo debitis fuga aliquid quibusdam. Dolorem quidem veniam impedit
-                        inventore mollitia illum cupiditate in quisquam suscipit, natus laboriosam dolorum excepturi
-                        exercitationem amet, sed quae maxime laudantium voluptate?
-                        Voluptas, minima blanditiis. Aliquid libero, atque quae fugit optio corrupti? Aperiam, odit
-                        quis. Obcaecati velit, nulla maiores placeat ex voluptate odit voluptates hic repudiandae
-                        voluptatem iusto cupiditate, asperiores eos sit.</p>
-                     <a href="$" class="buttonMore , eventRaton">Leer mas</a>      
-                </article>
+                <!--se caragara los post por medio de JS-->
             </div>
             <aside id="siderbar">
                 <div id="about">
