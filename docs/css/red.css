@@ -9,7 +9,14 @@ body{
     cursor: pointer;
 }
 
-
+/* borde del reloj */
+#mostarHora{
+    border: 5px solid #ca3413;
+     }
+#controlTime{
+        background-color: #333;
+    }     
+/****************************/     
 
 #logo{
     background: #ca3413;
@@ -36,4 +43,11 @@ form input[type='submit']{
     box-shadow: 8px 7px 16px #ca3413;
 }
 
-
+/*cambio de estilos  de acordion*/
+.ui-state-active{
+    background: #ca3413;
+   }
+   
+   .ui-state-active:hover{
+       background-color: #f5471f;
+   }

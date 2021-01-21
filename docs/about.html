@@ -1,0 +1,112 @@
+<!doctype html>
+<html lang="es">
+
+<head>
+    <title>Proyecto con javaScript</title>
+    <meta charset="utf-8">
+    
+
+    <!--jQuery-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <!--jQueryIU--->
+    <script src="../jQueryUI/jquery-ui-1.12.1.custom/jquery-ui.min.js"></script>
+
+    <!--jQueryIU Styles-->
+    <link rel="stylesheet" href="../jQueryUI/jquery-ui-1.12.1.custom/jquery-ui.min.css">
+    <link rel="stylesheet" href="../jQueryUI/jquery-ui-1.12.1.custom/jquery-ui.structure.min.css">
+    <link rel="stylesheet" href="../jQueryUI/jquery-ui-1.12.1.custom/jquery-ui.theme.min.css">
+  
+     <!--moment.js-->
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js"></script>
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/locale/es-mx.min.js"></script>
+    
+     <!--estilos css-->
+    <link rel="stylesheet" href="css/about.css">
+    <link id="theme" rel="stylesheet"> 
+</head>
+
+<body>
+        <div id="mostarHora"></div>
+         <button id="controlTime" class="eventRaton">Detener</button>
+
+    <div id="stylePag-theme">
+        <div id="to-green" class="animacioH">1</div>
+        <div id="to-red" class="animacioH">2</div>
+        <div id="to-blue" class="animacioH">3</div>
+    </div>
+    <section id="global">
+        <!--cabezera-->
+        <header>
+            <div id="logo">
+                <h1>Proyecto JS</h1>
+                <div id="mostarHora"></div>
+            </div>
+            <div class="clearfix">
+                <nav id="menu">
+                    <ul>
+                        <li><a href="index.html" class="eventRaton">Inicio</a></li>
+                        <li><a href="about.html" class="eventRaton">Sobre mi</a></li>
+                        <li><a href="#" class="eventRaton">Contaco</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        <section id="content">
+            <div id="acordeon">
+                <h3>¿Quienes somos?</h3>
+                <div>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi ad placeat tenetur expedita
+                        laudantium, quaerat provident eveniet nisi exercitationem ratione cum repellat recusandae
+                        ducimus quae, aliquam dolorem aperiam quibusdam sunt!
+                    </p>
+                </div> 
+                <h3>¿Nuestros servicios?</h3>
+                <div>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi ad placeat tenetur expedita
+                        laudantium, quaerat provident eveniet nisi exercitationem ratione cum repellat recusandae
+                        ducimus quae, aliquam dolorem aperiam quibusdam sunt!
+                    </p>
+                </div>  
+                <h3>Atencion al cliente</h3>
+                <div>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi ad placeat tenetur expedita
+                        laudantium, quaerat provident eveniet nisi exercitationem ratione cum repellat recusandae
+                        ducimus quae, aliquam dolorem aperiam quibusdam sunt!
+                    </p>
+                </div>     
+            </div>
+            <aside id="siderbar">
+                <div id="about">
+                    <h4><span>¿Quien soy?</span></h4>
+                    <img src="img/caracol.jpg ">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic, suscipit excepturi. Porro nam,
+                        dignissimos impedit iure a reprehenderit. Officiis veniam inventore neque recusandae quod fugiat
+                        cupiditate non corporis porro natus?</p>
+                </div>
+                <div id="login">
+                    <h4 id="h4">Indentificate</h4>
+                    <form id="from">
+                        <label for="name">Nombre</label>
+                        <input type="text" name="name" id="name" placeholder="Nombre" required>
+                        <br><label for="email">Gmail</label>
+                        <input type="email" name="email" id="email" placeholder="Correo" required><br>
+                        <label for="password">password</label>
+                        <input type="password" name="password" id="password" placeholder="Password" required>
+                        <input type="submit" value="Ingresar">
+                    </form>
+                </div>
+            </aside>
+            <div class="clearfix"></div>
+        </section>
+    </section>
+    <footer>
+        pie de pagina <a href="#" class="subir">Ir hacia arriba</a>
+    </footer>
+    <!--main javaScript-->
+    <script src="js/mainAbout.js"></script>
+</body>
+
+</html>

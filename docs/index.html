@@ -4,9 +4,7 @@
 <head>
     <title>Proyecto con javaScript</title>
     <meta charset="utf-8">
-    <!--estilos css-->
-    <link rel="stylesheet" href="css/style.css">
-    <link id="theme" rel="stylesheet" > 
+     
     
    <!--jQuery-->
    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
@@ -18,9 +16,22 @@
     <!--slider-->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
   <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
-</head>
 
+ <!-- Plugin validacion -->
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-form-validator/2.3.26/jquery.form-validator.min.js"></script>
+
+
+
+  <!--estilos css-->
+  <link rel="stylesheet" href="css/style.css">
+  <link id="theme" rel="stylesheet" >
+</head>
 <body>
+    <div>
+    <div id="mostarHora"></div>
+     <button id="controlTime" class="eventRaton">Detener</button>
+    </div>
     <div id="stylePag-theme">
         <div id="to-green" class="animacioH">1</div>
         <div id="to-red" class="animacioH">2</div>
@@ -35,9 +46,8 @@
             <div class="clearfix">
                 <nav id="menu">
                     <ul>
-                        <li><a href="#" class="eventRaton">Inicio</a></li>
-                        <li><a href="#" class="eventRaton">Relog</a></li>
-                        <li><a href="#" class="eventRaton">Sobre mi</a></li>
+                        <li><a href="index.html" class="eventRaton">Inicio</a></li>
+                        <li><a href="about.html" class="eventRaton">Sobre mi</a></li>
                         <li><a href="#" class="eventRaton">Contaco</a></li>
                     </ul>
                 </nav>

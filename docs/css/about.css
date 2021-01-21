@@ -4,13 +4,11 @@
     list-style: none;
 }
 
-
 /* limpia los float */
 .clearfix{
     clear: both;
     float: none;
 }
-
 
 
 /* estilos del relosj*/
@@ -36,6 +34,11 @@
 }
 
 /***************************************/
+
+
+
+
+
 #global{
   width: 70%;
   margin: 0px auto;
@@ -45,6 +48,7 @@
   box-shadow: 18px  10px  16.5px black ;
 } 
 /*******************************************************/
+
 
 
 /* Estilos de logo*/
@@ -57,16 +61,12 @@
     line-height: 80px;
      color: white;
      text-align: center;
-     width:  75%;
+     width:  60%;
      height: 85px;
      margin-bottom: 20px;
      float: left;
 }
 /*******************************************************/
-
-/********************************************************/
-
-
 
 /* Estilos  de la nagacion*/
 #menu{
@@ -100,53 +100,14 @@
 /*******************************************************/
 
 
-/* Estilos de los artuculos*/
-#posts{
-   padding: 5px;
-   width: 60%;
-   font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-   float: left;
-}
+/* Estilos del acordion*/
 
-.post{
-    font-size: 20px;
-    color: #333;
-    padding: 10px;
+#acordeon{
+        padding: 5px;
+        width: 60%;
+        font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        float: left;
 }
-
-.post h2{
-    font-size: 32px;
-     text-transform: uppercase;
-     letter-spacing: 2.5px;
-}
-
-.post  .fecha{
-     color: gray;
-     margin-top: 8px;
-     display: block;
-}
-
-.post p {
-     margin-top: 25px;
-     margin-bottom: 20px;
-     line-height: 24.5px;
-     text-align: justify;
-}
-
-.buttonMore{
-    font-size: 15px;
-    width: 16%;
-    margin: 0px auto;
-    padding: 12px;
-    background-color: #333;
-    color: white;
-    text-decoration: none;
-    margin-top: 12px;
-    text-align: center;
-    margin-bottom: 20px;
-    display: block;
-}
-
 /*******************************************************/
 
 
@@ -265,35 +226,17 @@ footer{
     margin-top: 30px;
     line-height: 47px;
 }
-
-
 /*******************************************************/
 
 
 /*footer*/
-
-
-
 .subir{
     color: white;
      text-decoration: none;
      display: block;
      float: right;
 }
-
-
-
 /**************************************************/
-
-
-/*configuraciones ectra del slider*/
-
-.bx-wrapper, 
-.bx-viewport{
-    height: 300px !important; /*funcion para que los elemtos de 
-                                forzamente su apariencia
-                                 */
-}
 
 
 

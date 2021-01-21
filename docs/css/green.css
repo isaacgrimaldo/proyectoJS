@@ -10,11 +10,20 @@ body{
     cursor: pointer;
 }
 
+/*borde del reloj*/
+ #mostarHora{
+border: 5px solid #235e3d;
+ }
+
+
+/****************/
 
 
 #logo{
     background: #235e3d;
 }
+
+
 
 
 .buttonMore{   
@@ -36,6 +45,19 @@ form input[type='submit']{
 
 #dataUser{
     box-shadow: 8px 7px 16px #235e3d;
+}
+
+
+
+/* estilo de del acordion*/
+
+/*cambio de estilos  de acordion*/
+.ui-state-active{
+ background: #235e3d;
+}
+
+.ui-state-active:hover{
+    background-color: #2a7b4d;
 }
 
 

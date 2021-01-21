@@ -107,7 +107,6 @@ $(document).ready(function(){
         <a href="$" class="buttonMore , eventRaton">Leer mas</a>
         </article>
         ` 
-        
         $('#posts').append(HTMLpost)
           
       })  
@@ -171,9 +170,6 @@ $(document).ready(function(){
 
  /* login  falso */
 
-
-
-
  function generarUser(){
            const login = $('#login');
            const h4    = $('#h4')
@@ -235,7 +231,37 @@ function cerrarSesion (){
   }) 
 
 /********************** */
-  
+ 
+ 
+
+ /*generar la hora */
+ function darHora(){
+  const horaT = setInterval(function(){
+    let hora = moment().format('hh:mm:ss');
+   reloj.html(hora)
+ },800);
+   return horaT
+ }
+
+ const reloj  = $('#mostarHora');
+ const control = $('#controlTime');
+ let DarHora = darHora();
+ let parar = true
+     control.click(function(){
+      if(!parar){
+          DarHora = darHora()
+          parar = true;
+          control.html('Detener')
+      }else if(parar){
+        clearInterval(DarHora);
+        parar = false
+        control.html('Iniciar')
+      }
+     })
+
+/************************ */
+
+
 });
 
  
